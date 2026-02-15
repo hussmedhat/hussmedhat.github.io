@@ -4,81 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hussein Medhat | Systems & AI</title>
-    
     <link rel="stylesheet" href="css/style.css">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-    <canvas id="neural-canvas"></canvas>
+    <div class="gradient-bg">
+        <div class="gradient-blob blue"></div>
+        <div class="gradient-blob purple"></div>
+        <div class="gradient-blob cyan"></div>
+    </div>
+    <div class="noise-overlay"></div>
 
-    <nav class="glass-nav">
-        <a href="#" class="logo">Hussein<span class="dot">.</span></a>
-        <ul class="nav-links">
-            <li><a href="#home" class="active">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+    <nav>
+        <div class="logo">Hussein.</div>
+        <div class="nav-links">
+            <a href="#work">Work</a>
+            <a href="#about">About</a>
+            <a href="#contact" class="btn-nav">Contact Me</a>
+        </div>
     </nav>
 
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <div class="text-zone">
-                <div class="badge">Available for Work</div>
+    <main class="hero-section">
+        <div class="glass-card">
+            
+            <div class="content-side">
+                <div class="status-pill">
+                    <span class="dot"></span> Available for Research & Dev
+                </div>
+                
                 <h1>
-                    Hello, I'm <br>
-                    <span class="highlight">Hussein Medhat</span>
+                    Building the <br> 
+                    <span class="gradient-text">Intelligence</span> of Tomorrow.
                 </h1>
                 
-                <h2 class="role-text">I build <span class="typewriter"></span></h2>
-                
                 <p class="bio">
-                    Bridging the gap between <strong>Low-Level Systems</strong> and <strong>High-Level AI</strong>. 
-                    Specializing in Algorithms, Deep Learning, and efficient Architecture.
+                    I am <strong>Hussein Medhat</strong>, a Systems Engineer bridging the gap between hardware efficiency and deep learning models.
                 </p>
 
-                <div class="cta-group">
-                    <a href="assets/resume.pdf" target="_blank" class="btn btn-primary">
-                        <i class="fas fa-download"></i> Download CV
+                <div class="btn-group">
+                    <a href="assets/resume.pdf" target="_blank" class="btn-primary">
+                        Download CV
                     </a>
-                    <a href="#projects" class="btn btn-outline">
-                        View Projects
+                    <a href="#work" class="btn-ghost">
+                        View Projects <i class="fas fa-arrow-right"></i>
                     </a>
+                </div>
+
+                <div class="mini-stats">
+                    <div class="stat">
+                        <b>3+</b> Years
+                    </div>
+                    <div class="stat">
+                        <b>15+</b> Projects
+                    </div>
+                    <div class="stat">
+                        <b>C++ / Python</b> Expert
+                    </div>
                 </div>
             </div>
 
-            <div class="image-zone">
-                <div class="circle-spin"></div>
-                <img src="assets/imgs/avatar.jpg" alt="Hussein Medhat" class="avatar">
+            <div class="visual-side">
+                <img src="assets/imgs/avatar.jpg" alt="Hussein Medhat" class="profile-img">
+                <div class="float-card c1"><i class="fas fa-microchip"></i> Systems</div>
+                <div class="float-card c2"><i class="fas fa-brain"></i> AI</div>
             </div>
-        </div>
 
-        <div class="stats-container">
-            <div class="stat">
-                <span class="num" data-val="3">0</span>
-                <span class="label">Years Exp</span>
-            </div>
-            <div class="stat">
-                <span class="num" data-val="15">0</span>
-                <span class="label">Projects</span>
-            </div>
-            <div class="stat">
-                <span class="num" data-val="8">0</span>
-                <span class="label">Tech Stack</span>
-            </div>
-            <div class="stat">
-                <span class="num" data-val="500">0</span>
-                <span class="label">Commits</span>
-            </div>
         </div>
-    </section>
+    </main>
 
-    <script src="js/main.js"></script>
 </body>
 </html>
